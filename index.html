@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/line awesome/css/line-awesome.min.css" />
+    <link rel="stylesheet" href="mystyle.css" />
+    <title> Groove with Paul</title>
+  </head>
+  <body>
+    <div class="music-bg">
+      <div class="header">
+        <h2><b> <i class="la la-music"></i> Groove With Paul <i class="la la-music"></i></b></h2>
+      </div>
+      <div class="img-container">
+        <div class="img-holder"><img src="/img/scars to beautiful.jpg" alt="" id="cover" /></div class="img-holder">
+      </div>
+      <div class="music-container">
+        <div class="music-info">
+          <h5 id="title">Scars to beautiflul</h5>
+          <p id="celeb"><i id="artist">Alessia</i></p>
+          <div>
+            <input type="range" min="1" max=""
+        value="0" class="seek_slider" onchange="seekTo()">
+          </div>
+          <!-- <div class="progress-container">
+            <div class="progress"></div>
+          </div> -->
+        </div>
+
+        <audio
+          src="/songs/Alessia Cara - Scars To Your Beautiful (128).mp3"
+          id="audio"
+        ></audio>
+
+        <div class="navigation">
+          <button class="action-btn" id="repeat">
+            <i class="la la-sync "></i>
+          </button>
+          <button class="action-btn" id="prev">
+            <i class="la la-backward "></i>
+          </button>
+          <button class="action-btn-big" id="play">
+            <i class="la la-play"></i>
+          </button>
+          <button class="action-btn" id="next">
+            <i class="la la-forward"></i>
+          </button>
+          <button class="action-btn" id="fav">
+            <i class="la la-heart"></i>
+          </button>
+        </div>
+      </div>
+    </div>
+    <script src="behave.js"></script>
+  </body>
+</html>
